@@ -1,0 +1,38 @@
+<?php
+
+namespace App\Http\Controllers\Ajax;
+
+use Carbon\Carbon;
+use Illuminate\Http\Request;
+use App\EntretienParticipant;
+use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\Controller;
+
+class EntretienParticipantControllerSuite extends DataTableController
+{
+    public function __invoke(Request $request)
+    {
+        $query = DB::table('Donnees_PE');
+
+        // counts
+        $recordsTotal = $query->get()->count();
+
+        $recordsFiltered = !empty($request->search['value']) ? $query->get()->count() : $recordsTotal;
+
+        // pagination
+        $query = $query->offset($request->start)->limit($request->length);
+
+        return response()->json([
+            'draw' => (int) $request->draw ?: 1,
+            'recordsTotal' => $recordsTotal,
+            'recordsFiltered' => $recordsFiltered,
+            'data' => $this->data($query),
+        ]);
+    }
+
+    protected function data($query)
+    {
+        return $query->get();
+    }
+}
+    

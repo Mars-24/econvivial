@@ -1,0 +1,36 @@
+.modal-container{
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.modal-container.show {
+    pointer-events: auto;
+    opacity: 1;
+    z-index:100000;
+}
+.modal-container iframe{
+    border-radius: 5px; 
+    width: 68vw; 
+    height: 80vh;
+}
+
+.modal-container .close{
+    position: absolute;
+    font-size: 30px;
+    top: 7vh;
+    left: 14vw;
+    color: red;
+    background: #fff;
+    border-radius: 100%;
+    padding: 8px;
+}

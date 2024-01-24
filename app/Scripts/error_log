@@ -1,0 +1,6 @@
+[06-Jan-2020 01:53:21 Europe/Paris] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 4096 bytes) in /home/cp1052399/public_html/app/Scripts/ssp.class.php on line 56
+[06-Jan-2020 01:54:06 Europe/Paris] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 4096 bytes) in /home/cp1052399/public_html/app/Scripts/ssp.class.php on line 56
+[06-Jan-2020 01:54:56 Europe/Paris] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 4096 bytes) in /home/cp1052399/public_html/app/Scripts/ssp.class.php on line 56
+[25-Jan-2020 10:12:39 Europe/Paris] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 4096 bytes) in /home/cp1052399/public_html/app/Scripts/ssp.class.php on line 56
+[25-Jan-2020 10:12:55 Europe/Paris] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 4096 bytes) in /home/cp1052399/public_html/app/Scripts/ssp.class.php on line 56
+[25-Jan-2020 10:20:53 Europe/Paris] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 4096 bytes) in /home/cp1052399/public_html/app/Scripts/ssp.class.php on line 56

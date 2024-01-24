@@ -1,0 +1,21 @@
+
+#wb_main { height: 0px; }
+#wb_main > .wb_cont_bg { background-color: ; }
+html { scroll-behavior: smooth; }
+body, .wb_sbg { min-width: 1200px; min-height: 0px; }
+.wb_cont_inner { width: 1200px; }
+.wb_cont_bg { width: 1200px; margin-left: -600px; }
+body.site, body.site .wb_sbg { height: 0px !important; }
+body.site .root { height: 0px !important; }
+
+
+
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (max-width: 767px) {
+}

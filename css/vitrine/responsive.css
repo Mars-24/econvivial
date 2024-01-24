@@ -1,0 +1,90 @@
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+.single_screen_slide {
+        padding: 48px 30px 52px 30px;
+    }
+
+    .img-resp{
+        height: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .single_screen_slide {
+        padding: 48px 30px 52px 30px;
+    }
+    .img-resp{
+        height: 100%;
+    }
+}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #mainmenu ul.nav.navbar-nav li a {
+        padding: 20px 10px;
+    }
+    .img-resp{
+        height: 100%;
+    }
+}
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    .mainmenu-area {
+        background: #fb086f;
+      /*  background: -webkit-linear-gradient(left, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);  */
+        /*background: -webkit-linear-gradient(left, #fb086f 0%, #da1963 0%, #f616dc 100%); */
+        background: -webkit-linear-gradient(left, #a5f69e 0%, #76dab0 0%, #95da7e  100%);
+
+        background: linear-gradient(to right, #a5f69e 0%, #76dab0 0%, #95da7e  100%);
+        /*background: linear-gradient(to right, #fb086f 0%, #da1963 0%, #f616dc 100%);
+       /* background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%); */
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fb086f', endColorstr='#f616dc', GradientType=1);
+    }
+    .mainmenu-area .navbar-toggle {
+        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+        border: 1px solid #fff;
+        border-radius: 1px;
+        padding: 10px;
+        -webkit-transition: 0.3s;
+        transition: 0.3s
+    }
+    .mainmenu-area .navbar-toggle .icon-bar {
+        background-color: #ffffff;
+        -webkit-transition: 0.3s;
+        transition: 0.3s
+    }
+    .mainmenu-area .navbar-toggle:focus,
+    .mainmenu-area .navbar-toggle:hover {
+        background-color: #ffffff;
+    }
+    .mainmenu-area .navbar-toggle:focus .icon-bar,
+    .mainmenu-area .navbar-toggle:hover .icon-bar {
+        background-color: #50d1c0;
+    }
+    .well.well-lg {
+        padding: 30px;
+    }
+    #mainmenu ul.nav.navbar-nav li a {
+        text-align: center;
+    }
+    .comment-list .media-left {
+        display: inline-block;
+        padding: 20px 20px 10px;
+    }
+
+    .img-resp{
+        height: 100%;
+    }
+}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {}

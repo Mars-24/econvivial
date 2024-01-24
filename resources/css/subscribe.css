@@ -1,0 +1,327 @@
+.subscribe-container{
+    margin: 10px auto;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+}
+
+.subscribe-form{
+    border: 1px solid #3d3de7;
+    background-color: #3d3de7;
+    width: 250px;
+    margin: 75px 22px;
+    height: fit-content;
+}
+.form-group{
+    position: absolute;
+    background-color: red;
+    padding: 0px 30px;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+.subscribe-form .header{
+    padding: 20px 0px;
+    background-color: #f54dbb;
+    text-align: center;
+    color: #fff;
+    border-radius: 0px 0px 20px 20px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.subscribe-form:nth-child(3) .header{
+    background-color: #af7946;
+}
+.subscribe-form:nth-child(3) .header h2{
+    color: yellow;
+}
+
+.subscribe-form .body .button{
+    margin: 12px;
+    padding: 15px 50px ;
+    border-radius: 8px;
+    background-color:#e6a658;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+}
+
+.subscribe-form .body .button-pink{
+    background-color: #f54dbb;
+    border-radius: 0px;
+}
+
+.subscribe-form .body .service{
+    padding-left: 20px;
+    text-align: left;
+}
+
+.notice{
+    color: black;
+    background-color: yellow;
+    width: 180px;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 35px;
+    display: none;
+}
+.subscribe-form:nth-child(3) .notice{
+    display: block;
+}
+
+
+
+a.btn{
+    margin: 20px;
+    color: #fff;
+}
+.social-sign ul li {
+    margin: 16px 7px;
+    /* margin-bottom: 24px; */
+    border: 1px solid #fff;
+    padding: 1px;
+    border-radius: 11px;
+    text-align: center;
+} 
+.btn-facebook{
+    background-color: blue;
+}   
+
+.btn-google{
+    background-color: red;
+}
+
+.order-container{
+    width: 100%;
+    line-height: 18px;
+}
+
+.order-container .heading{
+    margin: 20px;
+}
+
+.order-container .order-table  tbody tr td{
+    border: 1px solid #000;
+    padding: 10px;
+}
+.order-container .order-table  tbody tr td button{
+    padding: 6px 30px;
+    margin: 5px;
+    color: #fff;
+    font-weight: 800;
+    background: rgb(5, 157, 228);
+    border: none;
+}
+.order-container .order-table  tbody tr td input{
+    width: 40px;
+}
+table {
+    border-collapse: collapse; /* [1] */
+ }
+.order-container table{
+    width: 100%;
+}
+.order-container table .right{
+    text-align: right;
+}
+.order-container .img-logo{
+    width: 155px;
+}
+
+.facture-ref{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    border: 1px solid #e1e1e1;
+    color: #13a9ee;
+}
+.facture-ref p span{
+    font-weight: 700;
+}
+
+.payement{
+    margin-top: 20px;
+    width: 100%;
+    background-color: #d2d5da;
+    padding: 12px;
+}
+.button {
+    margin: 12px;
+    padding: 15px 50px;
+    border-radius: 8px;
+    background-color: #e6a658;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+  }
+
+.payement .payement-option{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.payement-option-free{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.payement-option img{
+    width: 200px;
+}
+
+.payement-option .paypal{
+    display: flex;
+    justify-content: space-between;
+}
+.payement-option h3,h4 {
+    text-align: center;
+}
+.payement h3{
+    font-weight: 500;
+    font-size: 1em;
+}
+.payement h4{
+    font-style: italic;
+    font-weight: 500;
+    color: #797b7c;
+}
+
+.detail-btn{
+    height: 10px;
+    width: 10px;
+    background:#13a9ee;
+    border-radius: 20px;
+    margin: auto 2px;
+}
+.detail-table{
+    display: flex;
+}
+.modal-container{
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.modal-container.show {
+    pointer-events: auto;
+    opacity: 1;
+    z-index:100000;
+}
+.modal-container iframe{
+    border-radius: 5px; 
+    width: 68vw; 
+    height: 80vh;
+}
+
+.modal-container .close{
+    position: absolute;
+    font-size: 30px;
+    top: 7vh;
+    left: 14vw;
+    color: red;
+    background: #fff;
+    border-radius: 100%;
+    padding: 8px;
+}
+
+.modal{
+    background-color: #fff;
+    width: 700px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.modal button{
+    padding: 10px 30px;
+    background: #13a9ee;
+    border: none;
+    color: #fff;
+}
+.modal table thead{
+    background-color: #add8ec;
+    color: #13a9ee;
+    font-weight: 500;
+}
+.modal table{
+    width: 100%;
+    border: 1px solid #d2d5da;
+    margin-bottom: 20px;
+}
+.modal table tr{
+    width: 100%;
+}
+.modal table tr td{
+ padding: 10px;
+}
+.modal table thead tr td:first-child{
+    text-align: start;
+}
+.modal table thead tr td:nth-child(2){
+    text-align: right;
+}
+
+.modal p{
+    font-size: 14px;
+    opacity: 0.7;
+}
+.modal table tbody .desc-tableau{
+    text-align: left;
+}
+
+.modal table tbody .price{
+    vertical-align: bottom;
+    font-weight: 800;
+}
+
+
+.payement-th{
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 20px;
+    color: #fff;
+    background-color: #f54dbb;
+    font-weight: normal;
+}
+.modal form > div{
+    display: block;
+    width: 100%;
+    height: 30px;
+}
+
+.modal form > div:first-of-type {
+    border: 1px solid #7fa9c2;
+    background-color: #fff;
+}
+.modal form > input{
+    max-width: 400px;
+    width: 100%;
+    margin: 17px auto;
+    height: 30px;
+    padding-left: 20px;
+    background: #fff;
+    border: 1px solid #7fa9c2;
+    color: #000;
+    border-radius: 0px;
+}
+
+.btn-paye{
+    border-radius: 20px;
+}

@@ -1,0 +1,522 @@
+@import url("reset.css");
+@import url("normalize.css");
+@import url("bootstrap.min.css");
+@import url("fontawesome-all.css");
+@import url("aos.css");
+@import url("animate.css");
+@import url("header.css");
+@import url("footer.css");
+@import url("slider.css");
+@import url("slick.css");
+@import url("slick-theme.css");
+
+/* New fonts */
+
+@font-face {
+    font-family: 'Gilroy-Black';
+    src: url("../fonts/Typographie/Gilroy-Black.otf");
+}
+
+@font-face {
+    font-family: 'Gilroy-BlackItalic';
+    src: url("../fonts/Typographie/Gilroy-BlackItalic.otf");
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url("../fonts/Typographie/Gilroy-Bold.otf");
+}
+
+@font-face {
+    font-family: 'Gilroy-BoldItalic';
+    src: url("../fonts/Typographie/Gilroy-BoldItalic.otf");
+}
+
+@font-face {
+    font-family: 'Gilroy-ExtraBold';
+    src: url("../fonts/Typographie/Gilroy-ExtraBold.otf");
+}
+
+@font-face {
+    font-family: 'Gilroy-ExtraBoldItalic';
+    src: url("../fonts/Typographie/Gilroy-ExtraBoldItalic.otf");
+}
+
+@font-face {
+    font-family: 'Gilroy-Heavy';
+    src: url("../fonts/Typographie/Gilroy-Heavy.otf");
+}
+
+@font-face {
+    font-family: 'Gilroy-HeavyItalic';
+    src: url("../fonts/Typographie/Gilroy-HeavyItalic.otf");
+}
+
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url("../fonts/Typographie/Gilroy-Light.otf");
+}
+
+@font-face {
+    font-family: 'Gilroy-LightItalic';
+    src: url("../fonts/Typographie/Gilroy-LightItalic.otf");
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url("../fonts/Typographie/Gilroy-Medium.otf");
+}
+
+@font-face {
+    font-family: 'Gilroy-MediumItalic';
+    src: url("../fonts/Typographie/Gilroy-MediumItalic.otf");
+}
+
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url("../fonts/Typographie/Gilroy-Regular.otf");
+}
+
+@font-face {
+    font-family: 'Gilroy-RegularItalic';
+    src: url("../fonts/Typographie/Gilroy-RegularItalic.otf");
+}
+
+@font-face {
+    font-family: 'Gilroy-SemiBold';
+    src: url("../fonts/Typographie/Gilroy-SemiBold.otf");
+}
+
+@font-face {
+    font-family: 'Gilroy-SemiBoldItalic';
+    src: url("../fonts/Typographie/Gilroy-SemiBoldItalic.otf");
+}
+
+@font-face {
+    font-family: 'Gilroy-Thin';
+    src: url("../fonts/Typographie/Gilroy-Thin.otf");
+}
+
+@font-face {
+    font-family: 'Gilroy-ThinItalic';
+    src: url("../fonts/Typographie/Gilroy-ThinItalic.otf");
+}
+
+@font-face {
+    font-family: 'Gilroy-UltraLight';
+    src: url("../fonts/Typographie/Gilroy-UltraLight.otf");
+}
+
+@font-face {
+    font-family: 'Gilroy-UltraLightItalic';
+    src: url("../fonts/Typographie/Gilroy-UltraLightItalic.otf");
+}
+
+/* Fonts adjust */
+
+body {
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 16px;
+    /* background-color: #fff5ff; */
+}
+
+div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    font-family: 'Gilroy-Regular', sans-serif;
+}
+
+.page__wrapper {
+    background-color: #ffebff;
+}
+
+.page__wrapper .container {
+    background-color: #fff
+}
+
+#partenaires {
+    padding-bottom: 80px
+}
+
+.section__title {
+    margin-top: 38px;
+    margin-bottom: 40px;
+}
+
+.section__title h2 {
+    text-transform: uppercase;
+    font-family: "Gilroy-SemiBold";
+    color: #27ae60;
+    border-bottom: 2px solid #27ae60;
+}
+
+.services__content__title {
+    margin-bottom: 30px;
+}
+
+.services__content__title span {
+    font-family: "Gilroy-SemiBold";
+    padding-left: 6px;
+    font-size: 23px;
+    color: #2980b9
+}
+
+.services__content__title i {
+    color: #2980b9;
+    font-size: 30px;
+}
+
+.services__content__desc p {
+    text-align: justify;
+}
+
+.thumbs {
+    margin-top: 70px
+}
+
+.thumbs .slick-prev, .thumbs .slick-next {
+    top: -35px;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.thumbs .slick-next {
+    right: 0;
+}
+
+.thumbs .slick-prev {
+    left: unset;
+    right: 60px;
+}
+
+.card__img img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    vertical-align: middle;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.card__img {
+    position: relative;
+}
+
+.card__one {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform 0.5s;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.card__one::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    content: '';
+    opacity: 0;
+    z-index: -1;
+}
+
+.card__one:hover, .card__one:focus {
+    transform: scale3d(1.106, 1.106, 1);
+}
+
+.card__one:hover::after, .card__one:focus::after {
+    opacity: 1;
+}
+
+.overlay__text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    vertical-align: middle;
+    /* background-color: rgba(75,75,75,.2); */
+}
+
+.overlay__text p {
+    color: #fff;
+    font-family: "Gilroy-Bold";
+    font-size: 21px;
+    width: 100%;
+    background-color: rgba(75, 75, 75, .2);
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-container embed .ytp-title-text {
+    font-size: 11px !important;
+}
+
+.partner__container {
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #27ae60
+}
+
+.slick-slide img {
+    width: 175px;
+}
+
+.slick-next:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f054' !important;
+    color: black !important;
+    font-size: 20px !important;
+    -webkit-font-smoothing: antialiased !important
+}
+
+.slick-prev:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f053";
+    color: black !important;
+    font-size: 20px !important;
+    -webkit-font-smoothing: antialiased !important
+}
+
+.input__container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+#loginModal .modal-header,
+#signupModal .modal-header {
+    background: #e84393;
+    text-align: center;
+}
+
+#signupModal .modal-content form {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.signup__input {
+    display: flex;
+}
+
+.signup__group {
+    margin-bottom: 25px;
+}
+
+#loginModal h3,
+#signupModal h3 {
+    color: white;
+}
+
+#loginModal .modal-content,
+#signupModal .modal-content {
+    border-radius: 0;
+    border: 2px solid #e84393
+}
+
+#loginModal .modal-body,
+#signupModal .modal-body {
+    padding: 70px 5px;
+}
+
+#loginModal form span,
+#signupModal form span {
+    background-color: #2980b9;
+    border-radius: 3px 0px 0px 3px;
+    border-right: 3px solid #2980b9;
+    color: white;
+    display: block;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+}
+
+#signupModal form span {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+#loginModal form input[type="email"], #loginModal form input[type="password"] {
+    background-color: transparent;
+    border-radius: 0px 3px 3px 0px;
+    border: 1px solid #2980b9;
+    color: #2980b9;
+    margin-bottom: 1em;
+    padding: 0 16px;
+    width: 60%;
+    height: 50px;
+}
+
+#signupModal form input[type="email"], #signupModal form input[type="password"],
+#signupModal form input[type="text"], #signupModal select {
+    background-color: transparent;
+    border-radius: 0px 3px 3px 0px;
+    border: 1px solid #2980b9;
+    color: #2980b9;
+    margin-bottom: 1em;
+    padding: 0 16px;
+    height: 40px;
+}
+
+#signupModal select {
+    width: 80%;
+}
+
+#signupModal button[type="submit"],
+#loginModal button[type="submit"] {
+    background: #2980b9;
+    position: relative;
+    overflow: hidden;
+    border: 0;
+    width: 70%;
+    height: 50px;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#signupModal button[type="submit"]:after,
+#loginModal button[type="submit"]:after {
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, .5);
+    opacity: 0;
+    border-radius: 100%;
+}
+
+#signupModal .signup__validate {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.signup__submit {
+    width: 200px !important;
+    height: 40px !important;
+    margin-right: 15px;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0);
+        opacity: 1;
+    }
+    20% {
+        transform: scale(25, 25);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(40, 40);
+    }
+}
+
+button:focus:not(:active)::after {
+    animation: ripple 1s ease-out;
+}
+
+.login__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16%;
+    margin-bottom: 35px;
+}
+
+#conseils__page__wrapper {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.first__item__spacing {
+    margin-bottom: 20px;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: 0.3s;
+    overflow: hidden;
+    position: relative;
+}
+
+.card .img-wrapper {
+    overflow: hidden;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card img {
+    transition: transform .2s;
+    width: 100%;
+    height: auto;
+    max-height: 275px;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card__desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 10px;
+    background: #2980b9;
+}
+.card__desc span {
+    color: white
+}
+
+a.card__link:hover {
+    text-decoration: none;
+}
+
+.card__top__caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #e84393;
+    padding: 8px 10px;
+    color: white;
+}
+
+.items__row {
+    margin-bottom: 60px;
+}

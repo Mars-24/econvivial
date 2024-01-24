@@ -1,0 +1,280 @@
+
+
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
+.footer {
+    background: var(--white);
+    padding-block: 25px; 
+  margin-top: 120px;
+  margin-bottom: 0px;
+  
+    
+  }
+  
+  .footer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .footer-link,
+  .copyright {
+    color: var(--davys-gray);
+    font-size: var(--fs-6);
+    line-height: 1.7;
+  }
+  
+  .footer-link,
+  .copyright-link {
+    display: inline-block;
+    transition: var(--transition);
+  }
+  
+  :is(.footer-link, .copyright-link):is(:hover, :focus) { color: var(--blue-ryb); }
+  
+  .footer-item:not(:last-child)::after {
+    content: "-";
+    color: hsl(0, 0%, 80%);
+    font-weight: var(--fw-600);
+    margin-inline: 5px;
+  }
+  
+  .copyright-link { color: inherit; }
+  
+  
+  
+  
+  
+  /*-----------------------------------*\
+    #MEDIA QUERIES
+  \*-----------------------------------*/
+  
+  /**
+   * responsive for larger than 400px screen
+   */
+  
+  @media (min-width: 400px) {
+  
+    /**
+     * HOME
+     */
+  
+    .revenue-item:first-child { margin-bottom: 0; }
+  
+    .revenue-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  
+  }
+  
+  
+  
+  
+  
+  /**
+   * responsive for larger than 570px screen
+   */
+  
+  @media (min-width: 570px) {
+  
+    /**
+     * REUSED STYLE
+     */
+  
+    .container {
+      max-width: 550px;
+      margin-inline: auto;
+    }
+  
+  
+  
+    /**
+     * HEADER
+     */
+  
+    .navbar-list,
+    .user-action-list { padding-inline: 0; }
+  
+    
+  
+    /**
+     * HOME
+     */
+  
+    .card-price { --fs-2: 1.625rem; }
+  
+  
+  
+    /**
+     * TASKS
+     */
+  
+    .tasks .card-meta-list { justify-content: flex-end; }
+  
+  }
+  
+  
+  
+  
+  
+  /**
+   * responsive for larger than 768px screen
+   */
+  
+  @media (min-width: 768px) {
+  
+    /**
+     * REUSED STYLE
+     */
+  
+    .container { max-width: 700px; }
+  
+  
+  
+    /**
+     * HOME
+     */
+  
+    .progress-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+  
+    .progress-item:not(:last-child) { margin-bottom: 0; }
+  
+    .home .card-wrapper { grid-template-columns: 1fr 1fr; }
+  
+  }
+  
+  
+  
+  
+  
+  /**
+   * responsive for larger than 992px screen
+   */
+  
+  @media (min-width: 992px) {
+  
+    /**
+     * REUSED STYLE
+     */
+  
+    .container { max-width: 950px; }
+  
+  
+  
+    /**
+     * HEADER
+     */
+  
+    .menu-toggle-btn { display: none; }
+  
+    .header {
+      height: unset;
+      padding-block: 10px;
+    }
+  
+    .header.active { height: unset; }
+  
+    .navbar {
+      all: unset;
+      flex-grow: 1;
+    }
+  
+    .navbar .container { display: flex; }
+  
+    .navbar-list {
+      margin-bottom: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-inline: auto;
+    }
+  
+    .user-action-list {
+      flex-direction: row;
+      gap: 20px;
+    }
+  
+  
+  
+    /**
+     * HOME
+     */
+  
+    .article.container { padding-block: 35px; }
+  
+    .home { grid-template-columns: 1.25fr 0.75fr 1fr; }
+  
+    .home .card-wrapper { grid-template-columns: 1fr; }
+  
+    .progress-list { align-items: flex-end; }
+  
+  
+  
+    /**
+     * PROJECTS
+     */
+  
+    .project-list { grid-template-columns: repeat(3, 1fr); }
+  
+  
+  
+    /**
+     * TASKS
+     */
+  
+    .tasks .task-card {
+      grid-template-columns: 1fr 0.5fr 0.5fr;
+      align-items: center;
+    }
+  
+  
+  
+    /**
+     * FOOTER
+     */
+  
+    .footer-list { margin-bottom: 0; }
+  
+    .footer .container {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      align-items: center;
+    }
+  
+  }
+  
+  /**
+   * responsive for larger than 1200px screen
+   */
+  
+  @media (min-width: 1200px) {
+  
+    /**
+     * REUSED STYLE
+     */
+  
+    .container { max-width: 1600px; }
+  
+  
+  
+    /**
+     * HEADER
+     */
+    .navbar-list { gap: 10px;}
+    /**
+     * HOME
+     */
+    .card-price { --fs-2: 1.780rem; }
+  
+  }
