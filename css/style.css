@@ -129,6 +129,7 @@
 /*******************
 Wave Effects
 *******************/
+echo base_path();
 
 @import url("fontawesome-all.css");
 .waves-effect {

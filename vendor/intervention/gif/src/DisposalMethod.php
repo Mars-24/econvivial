@@ -2,10 +2,10 @@
 
 namespace Intervention\Gif;
 
-class DisposalMethod
+enum DisposalMethod: int
 {
-    public const UNDEFINED = 0;
-    public const NONE = 1;
-    public const BACKGROUND = 2;
-    public const PREVIOUS = 3;
+    case UNDEFINED = 0;
+    case NONE = 1; // overlay each frame in sequence
+    case BACKGROUND = 2; // clear to background (as indicated by the logical screen descriptor)
+    case PREVIOUS = 3; // restore the canvas to its previous state
 }
