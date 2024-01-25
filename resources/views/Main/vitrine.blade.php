@@ -110,7 +110,7 @@
 
             <div class="links">
               <ul>
-                <li><a  href="{{route('accueil')}}" >Acceuil</a></li>href="{{route('agenda')}}"
+                <li><a  href="{{route('accueil')}}" >Acceuil</a></li>
                 <li><a  href="{{route('consultation')}}">Services</a></li>
                 <li><a href="{{route('conseils')}}">Conseils Pratiques</a></li>
                 <li><a href="https://www.webradio.media/vestaplayer/big.php?radio=eVialRadio&server=stream4.vestaradio.com&fond=431ed9&texte=ffffff&volume=50&visualizertype=0&visualizeropacity=1" target="player" onClick="window.open('https://www.webradio.media/vestaplayer/big.php?radio=eVialRadio&server=stream4.vestaradio.com&fond=431ed9&texte=ffffff&volume=50&visualizertype=0&visualizeropacity=1', 'player','width=350,height=400,left=0,top=0,scrollbars=0')">Radio</a></li>
